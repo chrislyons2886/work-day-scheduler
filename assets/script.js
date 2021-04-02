@@ -6,8 +6,9 @@ var time = document.querySelector("#currentTime")
 setInterval(function(){
     time.innerHTML=moment().format('LTS') 
 }, 1000);
-//check current hour
+
 var currentHour = moment().hour();
+
 function colorizer(){
 $(".row").each(function(){
     var rowHour = parseInt($(this).attr("id").split("-")[1])
